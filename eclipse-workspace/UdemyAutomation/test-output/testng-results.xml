@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-11T09:24:35 IST" name="Default suite" finished-at="2024-06-11T09:26:01 IST" duration-ms="85632">
+    <groups>
+      <group name="Sanity">
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" name="purchaseCloth" class="UdemyAutomation.StandAloneTestForBaseTest"/>
+      </group> <!-- Sanity -->
+      <group name="Purchase">
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" name="purchaseCloth" class="UdemyAutomation.StandAloneTestForBaseTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-06-11T09:24:35 IST" name="Default test" finished-at="2024-06-11T09:26:01 IST" duration-ms="85632">
+      <class name="UdemyAutomation.StandAloneTestForBaseTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:24:36 IST" name="launchApplication" finished-at="2024-06-11T09:24:47 IST" duration-ms="11366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseCloth(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:24:47 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-11T09:25:08 IST" duration-ms="20959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maya@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Quality44%]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseCloth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:08 IST" name="tearDown" finished-at="2024-06-11T09:25:08 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:08 IST" name="launchApplication" finished-at="2024-06-11T09:25:19 IST" duration-ms="10605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseCloth(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:19 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-11T09:25:41 IST" duration-ms="22199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sao@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Quality44%]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseCloth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:41 IST" name="tearDown" finished-at="2024-06-11T09:25:41 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:41 IST" name="launchApplication" finished-at="2024-06-11T09:25:52 IST" duration-ms="10769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validateOrderHistory()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:25:52 IST" name="validateOrderHistory" finished-at="2024-06-11T09:26:01 IST" depends-on-methods="UdemyAutomation.StandAloneTestForBaseTest.purchaseCloth" duration-ms="9232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@1bb5a082]" started-at="2024-06-11T09:26:01 IST" name="tearDown" finished-at="2024-06-11T09:26:01 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UdemyAutomation.StandAloneTestForBaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

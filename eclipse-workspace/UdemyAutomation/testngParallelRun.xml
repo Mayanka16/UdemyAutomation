@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="5"> <!-- test is under suite level so can define here-->
+	
+
+
+	<packages>
+		<package name="com.qa.TestNG" />
+
+	</packages>
+	<test name="Test" parallel="classes" thread-count="2"> <!-- classes is under suite level so can define here-->
+
+		<classes>
+			<class name="com.qa.TestNG.Class1st" />
+		</classes>
+
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
