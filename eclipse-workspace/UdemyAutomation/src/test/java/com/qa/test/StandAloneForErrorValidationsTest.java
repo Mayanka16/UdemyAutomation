@@ -1,7 +1,8 @@
-package UdemyAutomation;
+package com.qa.test;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
@@ -11,13 +12,13 @@ import com.qa.TestComponents.BaseTest;
 public class StandAloneForErrorValidationsTest extends BaseTest {
 
 	@Test(groups= {"ErrorValidation"})
-	public void purchaseCloth() throws IOException {
+	public void purchaseClothErrorValidation() throws IOException {
 
 		//String productName = "ZARA COAT 3";
 
 		
 		landingPageObj.loginApplication("mayaa@gmail.com", "Quality44%");
-		AssertJUnit.assertEquals("Incorrect email or password.",landingPageObj.getErrorMessage());
+		Assert.assertEquals("Incorrect email orr password.",landingPageObj.getErrorMessage());
 
 		/*
 		 * ProductCatalog productCatalogObj = new ProductCatalog(driver);

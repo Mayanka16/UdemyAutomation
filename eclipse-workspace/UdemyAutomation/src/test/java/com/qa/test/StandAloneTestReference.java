@@ -1,4 +1,4 @@
-package UdemyAutomation;
+package com.qa.test;
 
 import java.time.Duration;
 import java.util.List;

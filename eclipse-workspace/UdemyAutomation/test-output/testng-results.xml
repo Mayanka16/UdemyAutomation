@@ -1,59 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T16:14:25 IST" name="Suite" finished-at="2024-06-11T16:15:10 IST" duration-ms="44776">
+  <suite started-at="2024-06-21T21:38:51 IST" name="Suite" finished-at="2024-06-21T21:38:51 IST" duration-ms="0">
     <groups>
-      <group name="Sanity">
-        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" name="purchaseCloth" class="UdemyAutomation.StandAloneTestForBaseTest"/>
-      </group> <!-- Sanity -->
       <group name="Purchase">
-        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" name="purchaseCloth" class="UdemyAutomation.StandAloneTestForBaseTest"/>
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@448c8166]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
       </group> <!-- Purchase -->
+      <group name="Sanity">
+        <method signature="Class2nd.carLoanAPIPage()[pri:0, instance:com.qa.TestNG.Class2nd@74287ea3]" name="carLoanAPIPage" class="com.qa.TestNG.Class2nd"/>
+        <method signature="Class2nd.carLoanMobilePage()[pri:0, instance:com.qa.TestNG.Class2nd@74287ea3]" name="carLoanMobilePage" class="com.qa.TestNG.Class2nd"/>
+        <method signature="Class3rd.homeLoanWebPage()[pri:0, instance:com.qa.TestNG.Class3rd@376a0d86]" name="homeLoanWebPage" class="com.qa.TestNG.Class3rd"/>
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@448c8166]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
+        <method signature="Class2nd.carLoanAPIPage()[pri:0, instance:com.qa.TestNG.Class2nd@1890516e]" name="carLoanAPIPage" class="com.qa.TestNG.Class2nd"/>
+        <method signature="Class2nd.carLoanMobilePage()[pri:0, instance:com.qa.TestNG.Class2nd@1890516e]" name="carLoanMobilePage" class="com.qa.TestNG.Class2nd"/>
+        <method signature="Class3rd.homeLoanWebPage()[pri:0, instance:com.qa.TestNG.Class3rd@16c069df]" name="homeLoanWebPage" class="com.qa.TestNG.Class3rd"/>
+      </group> <!-- Sanity -->
+      <group name="ErrorValidation">
+        <method signature="StandAloneForErrorValidationsTest.purchaseClothErrorValidation()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@7ba8c737]" name="purchaseClothErrorValidation" class="com.qa.test.StandAloneForErrorValidationsTest"/>
+      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2024-06-11T16:14:25 IST" name="Error Validation" finished-at="2024-06-11T16:14:25 IST" duration-ms="7">
-    </test> <!-- Error Validation -->
-    <test started-at="2024-06-11T16:14:25 IST" name="Purchase Product" finished-at="2024-06-11T16:15:10 IST" duration-ms="44776">
-      <class name="UdemyAutomation.StandAloneTestForBaseTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:14:25 IST" name="launchApplication" finished-at="2024-06-11T16:14:44 IST" duration-ms="18904" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="purchaseCloth(java.util.HashMap)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:14:44 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-11T16:14:50 IST" duration-ms="6153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Quality44%, email=maya@gmail.com, productName=ZARA COAT 3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseCloth -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:14:50 IST" name="tearDown" finished-at="2024-06-11T16:14:50 IST" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:14:50 IST" name="launchApplication" finished-at="2024-06-11T16:15:03 IST" duration-ms="12989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="purchaseCloth(java.util.HashMap)[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:15:03 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-11T16:15:09 IST" duration-ms="6160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Quality44%, email=sao@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseCloth -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:UdemyAutomation.StandAloneTestForBaseTest@30c15d8b]" started-at="2024-06-11T16:15:09 IST" name="tearDown" finished-at="2024-06-11T16:15:10 IST" duration-ms="172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- UdemyAutomation.StandAloneTestForBaseTest -->
-    </test> <!-- Purchase Product -->
   </suite> <!-- Suite -->
 </testng-results>

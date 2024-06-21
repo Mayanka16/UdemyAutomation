@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -50,25 +52,32 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		return driver;
 	}
-	
+
 	public List<HashMap<String, String>> getJsonDataToHashMap(String filePath) throws IOException {
 		// reading json to string
 		// FileUtils.readFileToString(new
 		// File("//Users//mayanka//eclipse-workspace//UdemyAutomation//src//test//java//jsonData//PurchaseCloth.json"));
-		String jsonContent = FileUtils.readFileToString(
-				new File(filePath), StandardCharsets.UTF_8);
-		
-		//String to HashMap using Jackson Databind
+		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+
+		// String to HashMap using Jackson Databind
 		ObjectMapper mapper = new ObjectMapper();
-		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>(){
-			
-			
-		});
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
+				new TypeReference<List<HashMap<String, String>>>() {
+
+				});
 		return data;
 	}
-	
 
-	@BeforeMethod(alwaysRun = true) //(alwaysRun = true) in any case this method will always run
+	public String getScreenShotAs(String failedTestCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File file = new File(System.getProperty("user.dir") + "//reports//" + failedTestCaseName + ".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir") + "//reports//" + failedTestCaseName + ".png";
+
+	}
+
+	@BeforeMethod(alwaysRun = true) // (alwaysRun = true) in any case this method will always run
 
 	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
@@ -78,7 +87,7 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod(alwaysRun = true)//(alwaysRun = true) in any case this method will always run
+	@AfterMethod(alwaysRun = true) // (alwaysRun = true) in any case this method will always run
 	public void tearDown() {
 		System.out.println("Validation Completed");
 		driver.close();
