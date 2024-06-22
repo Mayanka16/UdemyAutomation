@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Purchase Product</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 21 21:37:43 IST 2024</td>
+<td>Started on:</td><td>Sat Jun 22 16:56:15 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67462 ms)</td>
+<tr><td>Total time:</td><td>159 seconds (159337 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,95 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.test.StandAloneTestForBaseTest.purchaseCloth()'><b>purchaseCloth</b><br>Test class: com.qa.test.StandAloneTestForBaseTest<br>Parameters: {password=Quality44%, email=maya@gmail.com, productName=ZARA COAT 3}</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1199, -154)
-  (Session info: chrome=126.0.6478.63)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [48d63f9fa33171d3726801ee098681f7, clickElement {id=f.20A1F140CFB2D09120E944EFA3F496F4.d.BEA1F182CA4D9541FC9BCB3B9205A478.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/y5/78pdxx_9549...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50089/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (48d63f9fa33171d3726801ee098681f7)] -&gt; xpath: //button[@routerlink=&apos;/dashboard/cart&apos;]]
-Session ID: 48d63f9fa33171d3726801ee098681f7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at com.qa.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:45)
-	at com.qa.test.StandAloneTestForBaseTest.purchaseCloth(StandAloneTestForBaseTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1268620933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1268620933'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1199, -154)
-  (Session info: chrome=126.0.6478.63)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [48d63f9fa33171d3726801ee098681f7, clickElement {id=f.20A1F140CFB2D09120E944EFA3F496F4.d.BEA1F182CA4D9541FC9BCB3B9205A478.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/y5/78pdxx_9549...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50089/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (48d63f9fa33171d3726801ee098681f7)] -&gt; xpath: //button[@routerlink=&apos;/dashboard/cart&apos;]]
-Session ID: 48d63f9fa33171d3726801ee098681f7
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at com.qa.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:45)
-	at com.qa.test.StandAloneTestForBaseTest.purchaseCloth(StandAloneTestForBaseTest.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>22</td>
-<td>com.qa.test.StandAloneTestForBaseTest@448c8166</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -165,107 +76,20 @@ Session ID: 48d63f9fa33171d3726801ee098681f7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.TestNG.Class3rd.excludehomeLoanMobilePage()'><b>excludehomeLoanMobilePage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class1st.firstMethod()'><b>firstMethod</b><br>Test class: com.qa.TestNG.Class1st</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class1st@4b86805d</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class3rd.homeLoanAPIPage()'><b>homeLoanAPIPage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class4th.firstMethod()'><b>firstMethod</b><br>Test class: com.qa.TestNG.Class4th</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class4th@62656be4</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class1st.secondMethod()'><b>secondMethod</b><br>Test class: com.qa.TestNG.Class1st</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class1st@4b86805d</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class3rd.homeLoanWebPage()'><b>homeLoanWebPage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class3rd.excludehomeLoanWebage()'><b>excludehomeLoanWebage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class2nd.carLoanAPIPage()'><b>carLoanAPIPage</b><br>Test class: com.qa.TestNG.Class2nd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class2nd@74287ea3</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class3rd.excludehomeLoanAPIPage()'><b>excludehomeLoanAPIPage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class2nd.carLoanWebPage()'><b>carLoanWebPage</b><br>Test class: com.qa.TestNG.Class2nd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class2nd@74287ea3</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class3rd.homeLoanMobilePage()'><b>homeLoanMobilePage</b><br>Test class: com.qa.TestNG.Class3rd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class3rd@376a0d86</td></tr>
-<tr>
-<td title='com.qa.TestNG.Class2nd.carLoanMobilePage()'><b>carLoanMobilePage</b><br>Test class: com.qa.TestNG.Class2nd</td>
-<td></td>
-<td>0</td>
-<td>com.qa.TestNG.Class2nd@74287ea3</td></tr>
-<tr>
 <td title='com.qa.test.StandAloneTestForBaseTest.purchaseCloth()'><b>purchaseCloth</b><br>Test class: com.qa.test.StandAloneTestForBaseTest<br>Parameters: {password=Quality44%, email=sao@gmail.com, productName=ADIDAS ORIGINAL}</td>
 <td></td>
-<td>20</td>
-<td>com.qa.test.StandAloneTestForBaseTest@448c8166</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>25</td>
+<td>com.qa.test.StandAloneTestForBaseTest@1500b2f3</td></tr>
+<tr>
+<td title='com.qa.test.StandAloneTestForBaseTest.purchaseCloth()'><b>purchaseCloth</b><br>Test class: com.qa.test.StandAloneTestForBaseTest<br>Parameters: {password=Quality44%, email=maya@gmail.com, productName=ZARA COAT 3}</td>
+<td></td>
+<td>31</td>
+<td>com.qa.test.StandAloneTestForBaseTest@1500b2f3</td></tr>
 <tr>
 <td title='com.qa.test.StandAloneTestForBaseTest.validateOrderHistory()'><b>validateOrderHistory</b><br>Test class: com.qa.test.StandAloneTestForBaseTest</td>
-<td><div><pre>java.lang.Throwable: Method com.qa.test.StandAloneTestForBaseTest.validateOrderHistory() on instance com.qa.test.StandAloneTestForBaseTest@448c8166 depends on not successfully finished methods 
-[com.qa.test.StandAloneTestForBaseTest.purchaseCloth() on instance com.qa.test.StandAloneTestForBaseTest@448c8166]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace259363624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace259363624'><pre>java.lang.Throwable: Method com.qa.test.StandAloneTestForBaseTest.validateOrderHistory() on instance com.qa.test.StandAloneTestForBaseTest@448c8166 depends on not successfully finished methods 
-[com.qa.test.StandAloneTestForBaseTest.purchaseCloth() on instance com.qa.test.StandAloneTestForBaseTest@448c8166]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>com.qa.test.StandAloneTestForBaseTest@448c8166</td></tr>
+<td></td>
+<td>9</td>
+<td>com.qa.test.StandAloneTestForBaseTest@1500b2f3</td></tr>
 </table><p>
 </body>
 </html>

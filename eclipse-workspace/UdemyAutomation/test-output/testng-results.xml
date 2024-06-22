@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-21T21:38:51 IST" name="Suite" finished-at="2024-06-21T21:38:51 IST" duration-ms="0">
+  <suite started-at="2024-06-22T16:56:15 IST" name="Suite" finished-at="2024-06-22T16:58:54 IST" duration-ms="159337">
     <groups>
-      <group name="Purchase">
-        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@448c8166]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
-      </group> <!-- Purchase -->
       <group name="Sanity">
-        <method signature="Class2nd.carLoanAPIPage()[pri:0, instance:com.qa.TestNG.Class2nd@74287ea3]" name="carLoanAPIPage" class="com.qa.TestNG.Class2nd"/>
-        <method signature="Class2nd.carLoanMobilePage()[pri:0, instance:com.qa.TestNG.Class2nd@74287ea3]" name="carLoanMobilePage" class="com.qa.TestNG.Class2nd"/>
-        <method signature="Class3rd.homeLoanWebPage()[pri:0, instance:com.qa.TestNG.Class3rd@376a0d86]" name="homeLoanWebPage" class="com.qa.TestNG.Class3rd"/>
-        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@448c8166]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
-        <method signature="Class2nd.carLoanAPIPage()[pri:0, instance:com.qa.TestNG.Class2nd@1890516e]" name="carLoanAPIPage" class="com.qa.TestNG.Class2nd"/>
-        <method signature="Class2nd.carLoanMobilePage()[pri:0, instance:com.qa.TestNG.Class2nd@1890516e]" name="carLoanMobilePage" class="com.qa.TestNG.Class2nd"/>
-        <method signature="Class3rd.homeLoanWebPage()[pri:0, instance:com.qa.TestNG.Class3rd@16c069df]" name="homeLoanWebPage" class="com.qa.TestNG.Class3rd"/>
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
       </group> <!-- Sanity -->
+      <group name="Purchase">
+        <method signature="StandAloneTestForBaseTest.purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" name="purchaseCloth" class="com.qa.test.StandAloneTestForBaseTest"/>
+      </group> <!-- Purchase -->
       <group name="ErrorValidation">
-        <method signature="StandAloneForErrorValidationsTest.purchaseClothErrorValidation()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@7ba8c737]" name="purchaseClothErrorValidation" class="com.qa.test.StandAloneForErrorValidationsTest"/>
+        <method signature="StandAloneForErrorValidationsTest.purchaseClothErrorValidation()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" name="purchaseClothErrorValidation" class="com.qa.test.StandAloneForErrorValidationsTest"/>
       </group> <!-- ErrorValidation -->
     </groups>
+    <test started-at="2024-06-22T16:56:15 IST" name="Error Validation" finished-at="2024-06-22T16:57:50 IST" duration-ms="95319">
+      <class name="com.qa.test.StandAloneForErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:56:15 IST" name="launchApplication" finished-at="2024-06-22T16:57:25 IST" duration-ms="70132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="purchaseClothErrorValidation()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:57:25 IST" name="purchaseClothErrorValidation" finished-at="2024-06-22T16:57:30 IST" duration-ms="5191" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email orr password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email orr password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.qa.test.StandAloneForErrorValidationsTest.purchaseClothErrorValidation(StandAloneForErrorValidationsTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseClothErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:57:30 IST" name="tearDown" finished-at="2024-06-22T16:57:31 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:57:31 IST" name="launchApplication" finished-at="2024-06-22T16:57:44 IST" duration-ms="13942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseClothErrorValidation()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:57:44 IST" name="purchaseClothErrorValidation" finished-at="2024-06-22T16:57:49 IST" duration-ms="4878" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email orr password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email orr password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.qa.test.StandAloneForErrorValidationsTest.purchaseClothErrorValidation(StandAloneForErrorValidationsTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseClothErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.StandAloneForErrorValidationsTest@34129c78]" started-at="2024-06-22T16:57:50 IST" name="tearDown" finished-at="2024-06-22T16:57:50 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.StandAloneForErrorValidationsTest -->
+    </test> <!-- Error Validation -->
+    <test started-at="2024-06-22T16:56:15 IST" name="Purchase Product" finished-at="2024-06-22T16:58:54 IST" duration-ms="159337">
+      <class name="com.qa.test.StandAloneTestForBaseTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:56:15 IST" name="launchApplication" finished-at="2024-06-22T16:57:25 IST" duration-ms="69936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:57:25 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-22T16:57:57 IST" duration-ms="31589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Quality44%, email=maya@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseCloth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:57:57 IST" name="tearDown" finished-at="2024-06-22T16:57:57 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:57:57 IST" name="launchApplication" finished-at="2024-06-22T16:58:08 IST" duration-ms="11021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseCloth(java.util.HashMap)[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:58:08 IST" name="purchaseCloth" data-provider="getData" finished-at="2024-06-22T16:58:33 IST" duration-ms="25399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Quality44%, email=sao@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseCloth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:58:33 IST" name="tearDown" finished-at="2024-06-22T16:58:34 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:58:34 IST" name="launchApplication" finished-at="2024-06-22T16:58:45 IST" duration-ms="11305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validateOrderHistory()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:58:45 IST" name="validateOrderHistory" finished-at="2024-06-22T16:58:54 IST" depends-on-methods="com.qa.test.StandAloneTestForBaseTest.purchaseCloth" duration-ms="9367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.StandAloneTestForBaseTest@1500b2f3]" started-at="2024-06-22T16:58:54 IST" name="tearDown" finished-at="2024-06-22T16:58:54 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.StandAloneTestForBaseTest -->
+    </test> <!-- Purchase Product -->
   </suite> <!-- Suite -->
 </testng-results>

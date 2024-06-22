@@ -5,13 +5,15 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
+import org.testng.util.RetryAnalyzerCount;
 
 import com.qa.TestComponents.BaseTest;
+import com.qa.TestComponents.Retry;
 
 
 public class StandAloneForErrorValidationsTest extends BaseTest {
 
-	@Test(groups= {"ErrorValidation"})
+	@Test(groups= {"ErrorValidation"},retryAnalyzer = Retry.class)
 	public void purchaseClothErrorValidation() throws IOException {
 
 		//String productName = "ZARA COAT 3";
