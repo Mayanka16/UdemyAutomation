@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+	<!-- To run groups 	-->
+	<groups>
+		<run>
+			<include name="Purchase" />
+		</run>
+	</groups>
+
+
+	<test thread-count="5" name="Purchase Product">
+		<classes>
+			<class name="com.qa.test.StandAloneTestForBaseTest" />
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="Error Validation">
+		<classes>
+			<class name="com.qa.test.StandAloneForErrorValidationsTest" />
+		</classes>
+	</test>
+
+
+	<!--paralle="tests" will run the classes in parallel and similarly methods can be define too. and the thread count is the maximum number of class
+	or method can run at a time -->
+
+
+</suite> <!--
+Suite -->
